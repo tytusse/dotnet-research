@@ -66,8 +66,3 @@ for i=1 to 10 do
 System.Console.ReadKey() |> ignore
 
 printfn "good bye"
-
-let rec foobar = seq {
-    1
-    yield! foobar
-}
