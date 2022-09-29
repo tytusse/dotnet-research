@@ -5,7 +5,13 @@
   &lt;Assembly Path="C:\Users\tomas\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e8406628_002D855c_002D4e54_002D9ee1_002D5a3d23c5d20d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::AB6D4761-A2CE-4CF9-A130-6366B0DF56BF::net6.0::MsServiceProvider.UnitTest1.Test1&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;And&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::AB6D4761-A2CE-4CF9-A130-6366B0DF56BF::net6.0::MsServiceProvider.UnitTest1.Test1&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F44FDD9D-E6D2-4A4D-B6A7-D359AEA08957::net6.0::Printing+Tests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;Not&gt;&#xD;
+      &lt;Project Location="C:\Projects\Research\CustomResearch\MsServiceProvider" Presentation="&amp;lt;MsServiceProvider&amp;gt;" /&gt;&#xD;
+    &lt;/Not&gt;&#xD;
+  &lt;/And&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
