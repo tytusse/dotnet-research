@@ -8,6 +8,7 @@
     <ItemGroup>
         <Compile Include="SortedQueue.fs" />
         <Compile Include="TwoLoopsMailboxes.fs" />
+        <Compile Include="SelfPostingMailbox.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
