@@ -40,19 +40,37 @@ let modified =
 
 printfn $"Modified N of rows: {modified}"
 
+let read(rdr:IDataReader) (col:int) =
+    let sizeReported = rdr.GetBytes(col, 0L, null, 0, 0)
+    if sizeReported > System.Int32.MaxValue
+    then failwith $"sizes over {System.Int32.MaxValue} are not supported"
+    
+    let sizeReported = int sizeReported // truncate
+    let buffer:byte[] = Array.zeroCreate (int sizeReported)
+    let sizeRead = rdr.GetBytes(col, 0L, buffer, 0, sizeReported)
+    if sizeRead <> sizeReported
+    then failwith $"sizeRead <> sizeReported ({sizeRead}<>{sizeReported}) "
+    
+    buffer
+
 let filesRead =
     use cmd = conn.CreateCommand()
     cmd.CommandText <- @"select Id, Name, Contents FROM Files"
     use rdr = cmd.ExecuteReader()
+    let contentsIdx = rdr.GetOrdinal("Contents")
+    
     [
         while rdr.Read() do
-            use str = rdr.GetStream("Contents")
-            use mem = new MemoryStream()
-            str.CopyTo mem
+            // use str = rdr.GetStream("Contents")
+            // use mem = new MemoryStream()
+            // str.CopyTo mem
+            // let contents = mem.ToArray()
+            
+            let contents = read rdr contentsIdx
             
             {| Id = rdr["Id"] |> Convert.ToInt32
                Name = string(rdr["Name"])
-               Contents = mem.ToArray() |}
+               Contents = contents |}
     ]
 
 printfn $"Files read back (total {filesRead.Length})"
