@@ -10,6 +10,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsharpTests", "FsharpTests\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatabaseFilesPoc", "DatabaseFilesPoc\DatabaseFilesPoc.fsproj", "{FCBEA536-92DE-47D2-8086-5FD437E14F3B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatabaseFilesDapperPoc", "DatabaseFilesDapperPoc\DatabaseFilesDapperPoc.fsproj", "{9E100C63-C310-4406-865F-AA4A3F80C4E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,5 +36,9 @@ Global
 		{FCBEA536-92DE-47D2-8086-5FD437E14F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCBEA536-92DE-47D2-8086-5FD437E14F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCBEA536-92DE-47D2-8086-5FD437E14F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

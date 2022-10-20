@@ -35,7 +35,7 @@ let modified =
     let cmd = conn.CreateCommand()
     cmd.CommandText <- @"insert into Files (Name, Contents) VALUES(@name, @contents)"
     cmd.Parameters.AddWithValue("@name", $"{timestampString}-ninja.jpg") |> ignore
-    cmd.Parameters.AddWithValue("@contents", file) |> ignore
+    cmd.Parameters.AddWithValue("@contents", file.AsMemory()) |> ignore
     cmd.ExecuteNonQuery()
 
 printfn $"Modified N of rows: {modified}"

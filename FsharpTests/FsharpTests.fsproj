@@ -7,9 +7,13 @@
 
     <ItemGroup>
         <Compile Include="Printing.fs" />
+        <Compile Include="Dapper.fs" />
+        <Compile Include="FancyCexpr.fs" />
+        <Compile Include="CompExpr.fs" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Dapper.FSharp" Version="3.4.0" />
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
       <PackageReference Include="xunit" Version="2.4.2" />
       <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
