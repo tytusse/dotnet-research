@@ -14,26 +14,60 @@ type Tests(hlp:ITestOutputHelper) =
         |> ignore
         
     [<Fact>]
-    member _.``adasda adadas``() =
-        let r = FancyCexpr.maybe {
-            if 2 = 1 then
-                do! Error "dsdsa"
-                //()
+    member _.``plain non fancy cexpr``() =
+        let t = FancyCexpr.Tracing(hlp.WriteLine)
+        let r = FancyCexpr.PlainBuilder t {
+            t.Write "1"
+            if 1 = 1 then
+                t.Write "2"
+                let! x = Ok 5
+                do! Ok () // No Zero after that(!!)
                 
-            return 4
+                // uncomment line below - zero appears suddenly
+                //t.Write "3"
+            
+            t.Write "4"
+            return "foobarrz"
         }
-        Assert.Equal(Ok 4, r)
+        
+        Assert.Equal(Ok "foobarrz", r)
         ()
+
+    // does not even compile        
+    // [<Fact>]
+    // member _.``cexpr not working Zero after do!``() =
+    //     let r = FancyCexpr.maybe {
+    //         if 1 = 1 then
+    //             // No Zero after that(!!)
+    //             // Comp expr calls Return here 
+    //             // hence at the moment there is no way to distinguish zero branch from return branc
+    //             // (facepalm)
+    //             do! Ok ()
+    //         
+    //         return 4
+    //     }
+    //     //Assert.Equal(Ok 4, r) -> error - result is not int but unit ....
+    //     ()
+            
         
     [<Fact>]
-    member _.``adasda ddddd``() =
-        FancyCexpr.maybe.Run(fun() ->
-            FancyCexpr.maybe.Combine(
-                (
-                    if 2 = 1
-                    then FancyCexpr.maybe.Bind(Error "dsdsa", (fun () -> FancyCexpr.maybe.Zero()))
-                    else FancyCexpr.maybe.Zero()
-                ),
-                fun() -> FancyCexpr.maybe.Return(4))
-        )
-        |> ignore
+    member _.``cexpr not working Zero after do! - how it really works (skipped delay)``() =
+        
+        let inner = 
+            if 2 = 1
+            // here instead of zero the compexpr resolves to `Return()` (with unit as param) for some reason.
+            // hence there is now ay to distinguish zero from actual `return whatever` with this.
+            // hence there is no way to implement return semantics
+            // we are left with best we can do - allow to combine only Result<unit,_> and to interpret
+            // `return ()` same way as zero. 
+            then FancyCexpr.maybe.Bind(Ok(), (fun () -> FancyCexpr.maybe.Return()))
+            else FancyCexpr.maybe.Return() 
+            
+        let r =      
+            FancyCexpr.maybe.Run(fun() ->
+                FancyCexpr.maybe.Combine(
+                    inner,
+                    fun() -> FancyCexpr.maybe.Return(4))
+            )
+            
+        ()
