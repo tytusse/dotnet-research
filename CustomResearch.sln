@@ -12,6 +12,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatabaseFilesPoc", "Databas
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatabaseFilesDapperPoc", "DatabaseFilesDapperPoc\DatabaseFilesDapperPoc.fsproj", "{9E100C63-C310-4406-865F-AA4A3F80C4E0}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TupleReflectionConstructorParams", "TupleReflectionConstructorParams\TupleReflectionConstructorParams.fsproj", "{0B5A7E9D-86A4-470E-AC37-F0ECC67C13B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleReflectionCtorParamsCSharp", "TupleReflectionCtorParamsCSharp\TupleReflectionCtorParamsCSharp.csproj", "{A9BCAFC2-B815-4870-AE98-FC391F7CB261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,5 +44,13 @@ Global
 		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E100C63-C310-4406-865F-AA4A3F80C4E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B5A7E9D-86A4-470E-AC37-F0ECC67C13B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5A7E9D-86A4-470E-AC37-F0ECC67C13B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5A7E9D-86A4-470E-AC37-F0ECC67C13B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5A7E9D-86A4-470E-AC37-F0ECC67C13B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BCAFC2-B815-4870-AE98-FC391F7CB261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BCAFC2-B815-4870-AE98-FC391F7CB261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BCAFC2-B815-4870-AE98-FC391F7CB261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BCAFC2-B815-4870-AE98-FC391F7CB261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
