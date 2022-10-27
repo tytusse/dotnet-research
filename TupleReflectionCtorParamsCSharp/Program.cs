@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 
-void Analyze(Type t)
+void Analyze(
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)]Type t)
 {
     Console.WriteLine($"reflecting on type {t.FullName}");
     var constructorInfos = t.GetConstructors();
@@ -23,17 +25,14 @@ void Analyze(Type t)
 }
 
 var dumbData = new System.Tuple<int, string>(1, "foobar");
-var l = new ArrayList(4);
+
 Console.WriteLine($"dumb data {dumbData}");
 var anon = new { Id = 1, Name = "Bob" };
+var l = new ArrayList(4);
 var ts = new[]
 {
-    dumbData.GetType(),
-    typeof(ValueTuple<int, string>),
-    typeof(ArrayList),
-    anon.GetType()
+    l.GetType(),
 };
-
 foreach (var t in ts)
 {
     Analyze(t);
