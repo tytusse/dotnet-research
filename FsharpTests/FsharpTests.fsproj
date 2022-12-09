@@ -10,6 +10,7 @@
         <Compile Include="Dapper.fs" />
         <Compile Include="FancyCexpr.fs" />
         <Compile Include="CompExpr.fs" />
+        <Compile Include="Async.fs" />
     </ItemGroup>
 
     <ItemGroup>
