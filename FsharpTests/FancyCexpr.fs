@@ -52,7 +52,7 @@ type PlainBuilder(tracing:Tracing) =
             match m with
             | Ok x -> f x
             | Error e -> Error e
-        tracing.Write $"returns %A{r}"
+        tracing.Write $"binds to %A{r}"
         r)
     // member _.Bind(i, f) = capt "Bind int as unit" (fun() ->
     //     tracing.Write $"m=%A{i}"

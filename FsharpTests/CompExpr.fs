@@ -14,25 +14,35 @@ type Tests(hlp:ITestOutputHelper) =
         |> ignore
         
     [<Fact>]
-    member _.``plain non fancy cexpr``() =
+    member _.``plain non fancy cexpr: surprise Return when ending cexpr with do!``() =
         let t = FancyCexpr.Tracing(hlp.WriteLine)
+        // return should be called once ffs
         let r = FancyCexpr.PlainBuilder t {
             t.Write "1"
             if 1 = 1 then
                 t.Write "2"
                 let! x = Ok 5
-                do! Ok () // No Zero after that(!!)
-                
-                // uncomment line below - zero appears suddenly
-                //t.Write "3"
-            
+                t.Write "`do! Ok ()` and ..."
+                do! Ok () // will call `Return` = ffs?            
             t.Write "4"
-            return "foobarrz"
+            return 4
         }
-        
-        Assert.Equal(Ok "foobarrz", r)
         ()
-
+        
+    [<Fact>]
+    member _.``plain non fancy cexpr: calls zero as expected``() =
+        let t = FancyCexpr.Tracing(hlp.WriteLine)
+        // return should be called once ffs
+        let r = FancyCexpr.PlainBuilder t {
+            t.Write "1"
+            if 1 = 2 then
+                t.Write "never happens"
+                do! Ok()
+            t.Write "4"
+            return 4
+        }
+        ()
+        
     // does not even compile        
     // [<Fact>]
     // member _.``cexpr not working Zero after do!``() =

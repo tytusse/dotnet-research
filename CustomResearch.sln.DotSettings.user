@@ -6,7 +6,7 @@
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=713c35a4_002D2bac_002D4c0f_002Db97f_002Daf008ac52b44/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="can cancel loop workflow" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::F44FDD9D-E6D2-4A4D-B6A7-D359AEA08957::net6.0::FsharpTests.Async+Fixture.can cancel loop workflow&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::F44FDD9D-E6D2-4A4D-B6A7-D359AEA08957::net6.0::FsharpTests.CompExpr+Tests.plain non fancy cexpr: calls zero as expected&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
