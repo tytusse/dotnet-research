@@ -11,8 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Dapper.FSharp" Version="3.4.0" />
-      <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+      <PackageReference Include="Dapper.FSharp" Version="4.5.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+      <PackageReference Update="FSharp.Core" Version="7.0.200" />
     </ItemGroup>
 
 </Project>
