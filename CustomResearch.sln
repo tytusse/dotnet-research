@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleReflectionCtorParamsCS
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WorkerServiceErrorHandling", "WorkerServiceErrorHandling\WorkerServiceErrorHandling.fsproj", "{992E8998-7DF0-4FCE-B706-F8DCEA444039}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParametrizedSQLVsLocalTempTable", "ParametrizedSQLVsLocalTempTable\ParametrizedSQLVsLocalTempTable.csproj", "{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,9 @@ Global
 		{992E8998-7DF0-4FCE-B706-F8DCEA444039}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{992E8998-7DF0-4FCE-B706-F8DCEA444039}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{992E8998-7DF0-4FCE-B706-F8DCEA444039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
