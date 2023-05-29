@@ -10,14 +10,16 @@ var connectionString = "????";
 using var connection = new SqlConnection(connectionString);
 connection.Open();
 
+// NOTE: uncomment parameter usage in 1st command and see how 2nd one suddenly starts to fail
 {
     var command = connection.CreateCommand();
     command.CommandText = @"
         SELECT TOP 10 * 
         INTO #result
-        FROM tomasz_animals where Name Like @NameStarts + '%'";
+        FROM tomasz_animals 
+        --where Name Like @NameStarts + '%'";
     
-    command.Parameters.AddWithValue("@NameStarts", "do");
+    // command.Parameters.AddWithValue("@NameStarts", "do");
     command.ExecuteNonQuery();
     Console.WriteLine("First query OK");
 }
