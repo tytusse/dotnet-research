@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Tests": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "FOO": "Bar"
+      }
+    }
+  }
+}
