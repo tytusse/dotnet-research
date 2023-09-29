@@ -20,6 +20,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WorkerServiceErrorHandling"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParametrizedSQLVsLocalTempTable", "ParametrizedSQLVsLocalTempTable\ParametrizedSQLVsLocalTempTable.csproj", "{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckCompilerConstants", "CheckCompilerConstants\CheckCompilerConstants.csproj", "{FD044E62-DBFB-4212-A5A5-0C772F25BA48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,5 +66,9 @@ Global
 		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6889477D-BAE0-45BC-9CF1-CD8FAB6797BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD044E62-DBFB-4212-A5A5-0C772F25BA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD044E62-DBFB-4212-A5A5-0C772F25BA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD044E62-DBFB-4212-A5A5-0C772F25BA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD044E62-DBFB-4212-A5A5-0C772F25BA48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
