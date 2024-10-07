@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,9 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Dapper.FSharp" Version="4.5.0" />
-      <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
-      <PackageReference Update="FSharp.Core" Version="7.0.200" />
+      <PackageReference Include="Dapper.FSharp" Version="4.9.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+      <PackageReference Update="FSharp.Core" Version="8.0.400" />
     </ItemGroup>
 
 </Project>
