@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckCompilerConstants", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTests", "CSharpTests\CSharpTests.csproj", "{7ABBCF4F-DC24-4F6A-82B3-8A415D88DABF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTester", "MutexTester\MutexTester.csproj", "{B940C452-AE0B-41E5-AC7B-504BC19581CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,5 +78,9 @@ Global
 		{7ABBCF4F-DC24-4F6A-82B3-8A415D88DABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ABBCF4F-DC24-4F6A-82B3-8A415D88DABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ABBCF4F-DC24-4F6A-82B3-8A415D88DABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B940C452-AE0B-41E5-AC7B-504BC19581CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B940C452-AE0B-41E5-AC7B-504BC19581CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B940C452-AE0B-41E5-AC7B-504BC19581CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B940C452-AE0B-41E5-AC7B-504BC19581CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
