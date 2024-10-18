@@ -12,6 +12,7 @@
         <Compile Include="CompExpr.fs" />
         <Compile Include="Async.fs" />
         <Compile Include="EncodingTests.fs" />
+        <Compile Include="StaticInterfaceMethods.fs" />
     </ItemGroup>
 
     <ItemGroup>
