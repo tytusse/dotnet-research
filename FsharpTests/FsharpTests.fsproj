@@ -13,6 +13,7 @@
         <Compile Include="Async.fs" />
         <Compile Include="EncodingTests.fs" />
         <Compile Include="StaticInterfaceMethods.fs" />
+        <Compile Include="StaticInterfaceMethodsExample.fs" />
     </ItemGroup>
 
     <ItemGroup>

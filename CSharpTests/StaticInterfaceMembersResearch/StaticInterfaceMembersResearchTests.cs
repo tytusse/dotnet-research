@@ -1,16 +1,6 @@
-﻿namespace CSharpTests;
+﻿namespace CSharpTests.StaticInterfaceMembersResearch;
 
 public class StaticInterfaceMembersResearchTests {
-    public interface IAnimal {
-        static abstract string FromEnglish(string english);
-        string Name { get; }
-    }
-
-    public class Dog(string name) : IAnimal {
-        public string Name { get; } = name;
-        public static string FromEnglish(string english) => $"{english}, woof!";
-    }
-
     static string FromEnglish<T>(string english) where T : IAnimal =>
         T.FromEnglish(english);
 
