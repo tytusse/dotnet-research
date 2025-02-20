@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTester", "MutexTester\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowHtmlMailFromNftpsyncJson", "ShowHtmlMailFromNftpsyncJson\ShowHtmlMailFromNftpsyncJson.csproj", "{AE9118A7-8D75-455A-88B1-81AE5D07D27C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmostNothingWaitingConsoleApp", "AlmostNothingWaitingConsoleApp\AlmostNothingWaitingConsoleApp.csproj", "{147A3B4E-2FD4-486C-AFF7-672A0DC4E709}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,5 +90,9 @@ Global
 		{AE9118A7-8D75-455A-88B1-81AE5D07D27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE9118A7-8D75-455A-88B1-81AE5D07D27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE9118A7-8D75-455A-88B1-81AE5D07D27C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147A3B4E-2FD4-486C-AFF7-672A0DC4E709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147A3B4E-2FD4-486C-AFF7-672A0DC4E709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147A3B4E-2FD4-486C-AFF7-672A0DC4E709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147A3B4E-2FD4-486C-AFF7-672A0DC4E709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
