@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="Disposable.fs" />
         <Compile Include="Printing.fs" />
         <Compile Include="Dapper.fs" />
         <Compile Include="FancyCexpr.fs" />
