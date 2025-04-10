@@ -45,3 +45,31 @@ type Fixture(hlp:ITestOutputHelper) =
         let signaled = e.WaitOne(5000)
         Assert.True(signaled)
         Thread.Sleep(1000)
+        
+    [<Fact>]
+    member _.``cancellation token source cancelled more than once not crashes anything``() : unit =
+        let waitOrDie (name:string) (waitHandle:WaitHandle) : unit =
+            if not(waitHandle.WaitOne(5000)) then failwith $"timeout waiting for [{name}]"
+            
+        use cts = new CancellationTokenSource()
+        use finishedEvent = new ManualResetEvent(false)
+        use sleptOnceEvent = new ManualResetEvent(false)
+        let work() = async {
+            let! _ = Async.OnCancel(fun() ->
+                hlp.WriteLine "Cancelled"
+                finishedEvent.Set()|>ignore)
+            let rec loop n = async{
+                hlp.WriteLine $"Loop {n}, will sleep now"
+                do! Async.Sleep 2000
+                sleptOnceEvent.Set() |> ignore
+                return! loop (n+1)
+            }
+            do! loop 1
+        }
+        
+        Async.Start(work(), cts.Token)
+        sleptOnceEvent |> waitOrDie "at least single sleep"
+        cts.Cancel()
+        cts.Cancel()
+        finishedEvent |> waitOrDie "finish"
+        
