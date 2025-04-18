@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RAM tests", "RAM tests", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAMFiller", "RAMFiller\RAMFiller.csproj", "{69A3023B-C33B-4B54-8B36-37100016B54D}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GracefullShutdownFs", "GracefullShutdownFs\GracefullShutdownFs.fsproj", "{4599FA0C-4B36-4327-8B5C-900BB95FB3DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,10 @@ Global
 		{69A3023B-C33B-4B54-8B36-37100016B54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69A3023B-C33B-4B54-8B36-37100016B54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69A3023B-C33B-4B54-8B36-37100016B54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4599FA0C-4B36-4327-8B5C-900BB95FB3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4599FA0C-4B36-4327-8B5C-900BB95FB3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4599FA0C-4B36-4327-8B5C-900BB95FB3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4599FA0C-4B36-4327-8B5C-900BB95FB3DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2EF686B4-0052-4791-B5B9-FB3A3CA37932} = {E7C743C5-6AD6-4C49-8F32-95209426C50D}
