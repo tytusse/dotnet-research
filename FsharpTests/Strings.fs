@@ -14,3 +14,13 @@ type Tests(hlp:ITestOutputHelper) =
             """
         let verbose = Regex.Replace(text, @"[ \t]", "*")
         hlp.WriteLine verbose
+        
+        
+    [<Fact>]
+    member _.``String normal quote formatting visual test``() : unit =
+        let text =
+            "
+            select StoreID
+            then else
+            "
+        hlp.WriteLine ("[" + text + "]")
