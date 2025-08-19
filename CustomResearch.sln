@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsServiceProvider", "MsServiceProvider\MsServiceProvider.csproj", "{AB6D4761-A2CE-4CF9-A130-6366B0DF56BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDI.Example", "ConsoleDI.Example\ConsoleDI.Example.csproj", "{BB6AE63A-8F50-4783-8FCA-720D7229293D}"
@@ -40,6 +43,20 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GracefullShutdownFs", "Grac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NftpsyncJsonMailsToHtml", "NftpsyncJsonMailsToHtml\NftpsyncJsonMailsToHtml.csproj", "{3F69057F-F3D6-426B-9CA2-C46A8EDBA74D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PmImprovementWorkshop", "PmImprovementWorkshop\PmImprovementWorkshop.csproj", "{6C33A7BA-26C1-4562-9838-BC97CC3ABAAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PmImprovementAppLabRat", "PmImprovementAppLabRat\PmImprovementAppLabRat.csproj", "{1D60D531-2D68-43F9-8CB5-4A5E4E439B44}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PmImprovementAppLabRatFsharp", "PmImprovementAppLabRatFsharp\PmImprovementAppLabRatFsharp.fsproj", "{3AE35B31-E6CD-4AFF-A4EC-C493B5BADC5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PmImprovementsCs5", "PmImprovementsCs5\PmImprovementsCs5.csproj", "{559C64F8-720A-48A2-B317-5D952107DD29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{1AE33523-E37D-47AB-A735-EDC52FFB24AA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +65,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AB6D4761-A2CE-4CF9-A130-6366B0DF56BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB6D4761-A2CE-4CF9-A130-6366B0DF56BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB6D4761-A2CE-4CF9-A130-6366B0DF56BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB6D4761-A2CE-4CF9-A130-6366B0DF56BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB6AE63A-8F50-4783-8FCA-720D7229293D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB6AE63A-8F50-4783-8FCA-720D7229293D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB6AE63A-8F50-4783-8FCA-720D7229293D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -120,9 +139,31 @@ Global
 		{3F69057F-F3D6-426B-9CA2-C46A8EDBA74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F69057F-F3D6-426B-9CA2-C46A8EDBA74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F69057F-F3D6-426B-9CA2-C46A8EDBA74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C33A7BA-26C1-4562-9838-BC97CC3ABAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C33A7BA-26C1-4562-9838-BC97CC3ABAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C33A7BA-26C1-4562-9838-BC97CC3ABAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C33A7BA-26C1-4562-9838-BC97CC3ABAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D60D531-2D68-43F9-8CB5-4A5E4E439B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D60D531-2D68-43F9-8CB5-4A5E4E439B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D60D531-2D68-43F9-8CB5-4A5E4E439B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D60D531-2D68-43F9-8CB5-4A5E4E439B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE35B31-E6CD-4AFF-A4EC-C493B5BADC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE35B31-E6CD-4AFF-A4EC-C493B5BADC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE35B31-E6CD-4AFF-A4EC-C493B5BADC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE35B31-E6CD-4AFF-A4EC-C493B5BADC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559C64F8-720A-48A2-B317-5D952107DD29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559C64F8-720A-48A2-B317-5D952107DD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559C64F8-720A-48A2-B317-5D952107DD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559C64F8-720A-48A2-B317-5D952107DD29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2EF686B4-0052-4791-B5B9-FB3A3CA37932} = {E7C743C5-6AD6-4C49-8F32-95209426C50D}
 		{69A3023B-C33B-4B54-8B36-37100016B54D} = {E7C743C5-6AD6-4C49-8F32-95209426C50D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C10CAA32-B8C0-4334-B3FA-87F7138FC6B9}
 	EndGlobalSection
 EndGlobal
