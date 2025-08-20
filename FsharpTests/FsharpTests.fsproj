@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <Compile Include="Disposable.fs" />
+        <Compile Include="Exceptions.fs" />
         <Compile Include="Printing.fs" />
         <Compile Include="Dapper.fs" />
         <Compile Include="FancyCexpr.fs" />
