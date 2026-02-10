@@ -26,6 +26,7 @@
   <Project Path="PmImprovementsCs5/PmImprovementsCs5.csproj" />
   <Project Path="PmImprovementWorkshop/PmImprovementWorkshop.csproj" />
   <Project Path="ShowHtmlMailFromNftpsyncJson/ShowHtmlMailFromNftpsyncJson.csproj" />
+  <Project Path="TestSpecreeCliFsharp/TestSpecreeCliFsharp.fsproj" />
   <Project Path="TupleReflectionConstructorParams/TupleReflectionConstructorParams.fsproj" />
   <Project Path="TupleReflectionCtorParamsCSharp/TupleReflectionCtorParamsCSharp.csproj" />
   <Project Path="WorkerServiceErrorHandling/WorkerServiceErrorHandling.fsproj" />
