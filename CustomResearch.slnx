@@ -1,0 +1,32 @@
+<Solution>
+  <Folder Name="/misc/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/RAM tests/">
+    <Project Path="RamAbuser/RamAbuser.csproj" />
+    <Project Path="RAMFiller/RAMFiller.csproj" />
+  </Folder>
+  <Project Path="AlmostNothingWaitingConsoleApp/AlmostNothingWaitingConsoleApp.csproj" />
+  <Project Path="CheckCompilerConstants/CheckCompilerConstants.csproj" />
+  <Project Path="ConsoleDI.Example/ConsoleDI.Example.csproj" />
+  <Project Path="ConsoleMailboxPriorities/ConsoleMailboxPriorities.fsproj" />
+  <Project Path="CSharpTests/CSharpTests.csproj" />
+  <Project Path="DatabaseFilesDapperPoc/DatabaseFilesDapperPoc.fsproj" />
+  <Project Path="DatabaseFilesPoc/DatabaseFilesPoc.fsproj" />
+  <Project Path="FinalizerTest/FinalizerTest.csproj" />
+  <Project Path="FsharpTests/FsharpTests.fsproj" />
+  <Project Path="GracefullShutdownFs/GracefullShutdownFs.fsproj" />
+  <Project Path="MsServiceProvider/MsServiceProvider.csproj" />
+  <Project Path="MutexTester/MutexTester.csproj" />
+  <Project Path="NftpsyncJsonMailsToHtml/NftpsyncJsonMailsToHtml.csproj" />
+  <Project Path="ParametrizedSQLVsLocalTempTable/ParametrizedSQLVsLocalTempTable.csproj" />
+  <Project Path="PmImprovementAppLabRat/PmImprovementAppLabRat.csproj" />
+  <Project Path="PmImprovementAppLabRatFsharp/PmImprovementAppLabRatFsharp.fsproj" />
+  <Project Path="PmImprovementsCs5/PmImprovementsCs5.csproj" />
+  <Project Path="PmImprovementWorkshop/PmImprovementWorkshop.csproj" />
+  <Project Path="ShowHtmlMailFromNftpsyncJson/ShowHtmlMailFromNftpsyncJson.csproj" />
+  <Project Path="TupleReflectionConstructorParams/TupleReflectionConstructorParams.fsproj" />
+  <Project Path="TupleReflectionCtorParamsCSharp/TupleReflectionCtorParamsCSharp.csproj" />
+  <Project Path="WorkerServiceErrorHandling/WorkerServiceErrorHandling.fsproj" />
+</Solution>
