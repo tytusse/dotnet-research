@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<!--
+- `dotnet build -v d /p:Nullability=disable`
+- `dotnet build -v d`
+-->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+        <Nullable Condition=" '$(Nullability)'!='disable' ">enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="ExampleExtensions.fs" />
+        <Compile Include="Tests.fs"/>
+        <None Include="gen-tests.fs.fish" />
+        <None Include="readme.md" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.4"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1"/>
+        <PackageReference Include="xunit" Version="2.9.3"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4"/>
+    </ItemGroup>
+
+    <!--
+    need to run with `-v d` switch (verbosity=detailed), i.e., `dotnet build -v d`
+    -->
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Message Text="Nullability enabled" Importance="High" Condition=" '$(Nullability)'!='disable' "/>
+        <Message Text="Nullability disabled" Importance="High" Condition=" '$(Nullability)'=='disable' "/>
+    </Target>
+
+</Project>

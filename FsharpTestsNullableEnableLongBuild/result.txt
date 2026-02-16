@@ -1,0 +1,127 @@
+module Tests
+            
+            open System
+            open FsharpTestsNullableEnableLongBuild.ExampleExtensions
+            open Xunit
+            
+            type Fixture() =
+
+    [<Fact>]
+    member _.``My test (1)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (2)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (3)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (4)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (5)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (6)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (7)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (8)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (9)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (10)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (11)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (12)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (13)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (14)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (15)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (16)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (17)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (18)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (19)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)
+
+    [<Fact>]
+    member _.``My test (20)`` () =
+        let z = "adad".NullableEcho()
+        let q = (null:string|null).NullableEcho()
+        Assert.True(true)

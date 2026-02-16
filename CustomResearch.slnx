@@ -3,6 +3,9 @@
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
   </Folder>
+  <Folder Name="/Nullability/">
+    <Project Path="FsharpTestsNullableEnableLongBuild/FsharpTestsNullableEnableLongBuild.fsproj" />
+  </Folder>
   <Folder Name="/RAM tests/">
     <Project Path="RamAbuser/RamAbuser.csproj" />
     <Project Path="RAMFiller/RAMFiller.csproj" />
