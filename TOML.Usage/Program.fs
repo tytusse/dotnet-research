@@ -25,7 +25,7 @@ type ValidateCommand() =
         
         use str = File.Open(settings.Path, FileMode.Open, FileAccess.Read)
         let! table = TomlSerializer.DeserializeAsync(str)
-        let v = table["notificationEmailAdresses"]["state"]
+        // TODO we need to enumerate keys here actually.
         for token in table.Tokens do
             AnsiConsole.WriteLine $"{token}"
         return 0
