@@ -24,7 +24,7 @@ type ValidateCommand() =
             failwith $"Path {settings.Path} does not exist"
         
         use str = File.Open(settings.Path, FileMode.Open, FileAccess.Read)
-        let! table = TomlSerializer.DeserializeAsync(str)
+        let! table = TomlSerializer.DeserializeAsync(str, cancellationToken)
         // TODO we need to enumerate keys here actually.
         for token in table.Tokens do
             AnsiConsole.WriteLine $"{token}"
