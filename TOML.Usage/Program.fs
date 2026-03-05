@@ -1,4 +1,5 @@
 ﻿open System
+open System.ComponentModel
 open System.IO
 open System.Threading
 open RStein.TOML
@@ -14,6 +15,7 @@ type ValidateSettings() =
     member val Path:string = "" with get, set
     
     [<CommandOption("-t|--types")>]
+    [<Description("print primitive (string, int, ...) and structural element (primitive, array, table, ...) types")>]
     member val PrintTypes = false with get, set
 
 
