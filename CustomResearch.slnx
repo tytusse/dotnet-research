@@ -20,6 +20,7 @@
   <Project Path="FinalizerTest/FinalizerTest.csproj" />
   <Project Path="FsharpTests/FsharpTests.fsproj" />
   <Project Path="GracefullShutdownFs/GracefullShutdownFs.fsproj" />
+  <Project Path="MsLoggingPoc/MsLoggingPoc.csproj" />
   <Project Path="MsServiceProvider/MsServiceProvider.csproj" />
   <Project Path="MutexTester/MutexTester.csproj" />
   <Project Path="NftpsyncJsonMailsToHtml/NftpsyncJsonMailsToHtml.csproj" />
