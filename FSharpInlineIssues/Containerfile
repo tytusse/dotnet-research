@@ -1,0 +1,18 @@
+
+# FROM mcr.microsoft.com/dotnet/sdk:$sdkversion
+# FROM busybox
+FROM ubuntu:26.10
+ARG sdkversion=10.0.400
+RUN apt-get update 
+RUN apt-get install -y wget software-properties-common ca-certificates gnupg tzdata tzdata libicu78 libssl3t64 ca-certificates 
+RUN wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+RUN chmod +x ./dotnet-install.sh
+# ENV sdkversion=$sdkversion
+RUN echo $sdkversion
+RUN ./dotnet-install.sh -v $sdkversion
+ENV PATH="${PATH};${HOME}/.dotnet"
+WORKDIR /app
+ADD FsharpTests.fsproj .
+ADD MethodInlining.fs .
+ADD entrypoint.sh .
+ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
