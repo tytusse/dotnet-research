@@ -28,7 +28,6 @@
   <Project Path="PmImprovementAppLabRat/PmImprovementAppLabRat.csproj" />
   <Project Path="PmImprovementAppLabRatFsharp/PmImprovementAppLabRatFsharp.fsproj" />
   <Project Path="PmImprovementsCs5/PmImprovementsCs5.csproj" />
-  <Project Path="PmImprovementWorkshop/PmImprovementWorkshop.csproj" />
   <Project Path="ShowHtmlMailFromNftpsyncJson/ShowHtmlMailFromNftpsyncJson.csproj" />
   <Project Path="TestSpecreeCliFsharp/TestSpecreeCliFsharp.fsproj" />
   <Project Path="TOML.Usage/TOML.Usage.fsproj" />
