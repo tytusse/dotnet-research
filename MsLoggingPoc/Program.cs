@@ -25,3 +25,14 @@ logger.LogInformation("{contents}", sb);
 }
 logger.LogInformation("Something else: {AnotherValue}", 666);
 logger.LogInformation("Now is: {NowValue:yyyyMMdd HH:mm:ss}", DateTime.Now);
+List<string> listOfStrings = ["fii", "foo", "bar", "baz"]; // all array items are printed
+// string[] listOfStrings = ["fii", "foo", "bar", "baz"]; 
+logger.LogInformation("list: {@TheList}", listOfStrings);
+
+// using this causes "fii" to be printed and nothing else from the array.
+// C#/Rider shows warning, however F# will not.
+var arrayOfStrings = listOfStrings.ToArray();
+logger.LogInformation("array: {@TheList}", arrayOfStrings);
+
+var fsList = Microsoft.FSharp.Collections.ListModule.OfSeq(listOfStrings);
+logger.LogInformation("fsList: {@FsList}", fsList);
