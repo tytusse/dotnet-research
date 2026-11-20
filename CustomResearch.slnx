@@ -10,6 +10,11 @@
     <Project Path="RamAbuser/RamAbuser.csproj" />
     <Project Path="RAMFiller/RAMFiller.csproj" />
   </Folder>
+  <Folder Name="/SelfContainedOptimizeContainer/">
+    <Project Path="SelfContainedOptimizeContainer/TheApp/TheApp.csproj" />
+    <Project Path="SelfContainedOptimizeContainer/TheOtherApp/TheOtherApp.csproj" />
+    <Project Path="SelfContainedOptimizeContainer/TheOtherApp2/TheOtherApp2.csproj" />
+  </Folder>
   <Project Path="AlmostNothingWaitingConsoleApp/AlmostNothingWaitingConsoleApp.csproj" />
   <Project Path="CheckCompilerConstants/CheckCompilerConstants.csproj" />
   <Project Path="ConsoleDI.Example/ConsoleDI.Example.csproj" />
