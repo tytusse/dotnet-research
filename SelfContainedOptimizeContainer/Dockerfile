@@ -24,11 +24,13 @@ RUN dotnet publish /base-src -o /app --self-contained=true
 # use artifacts from previous step and overwrite differences
 FROM dotnet-builder as build
 # /src expected to be mounted # COPY --link --exclude=(bin|obj) /TheOtherApp /src
+# question: will this even work
+# will RUN overwrite all files?
 COPY --from=build-base /app /app
-RUN dotnet publish /src -o /app --self-contained=false
+RUN dotnet publish /src -o /app --self-contained=true
 
 # the actual app
-FROM dotnet-runtime-deps
+FROM dotnet-runtime-deps as app
 WORKDIR /app
 COPY --link --from=build /app .
 CMD ./program
